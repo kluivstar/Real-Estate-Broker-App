@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aph FX Tradings</title>
+    <link rel="shortcut icon" href="images/fav.JPG" type="image/x-icon">
+
+    <!-- Tailwind/Css -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="alpha.css">
+    
+    <!-- parallax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="parallax.min.js"></script>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+
+<h>
+<body class="font-poppins">
+    <!-- CMP ticker -->
+    <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="1,1027,825,1839,5805,3890,6636" currency="USD" theme="light" transparent="true" show-symbol-logo="true"></div>
+
+    
+    <!-- Video Background -->
+    <div class="video-box" >
+        <video class="" autoplay muted loop id="background-video">
+            <source src="video/wdot.mp4" type="video/mp4" />
+        </video>
+    </div>
+    
+        <!-- Navbar -->
+    
+    <nav class="container navver mt-8  mx-auto ">
+        <!-- Flex container -->
+
+        <div class="flex items-center px-6 justify-between space-x-6">
+            <div class="">
+                <!-- Logo -->
+                <img src="images/aph_prev_ui.png" width="50%">
+            </div>
+
+            <!-- Menu items -->
+            
+            <div class="hidden text-sm md:text-xs md:text-justify space-x-10 md:flex text-white   space-x-10">
+                <a href="#" class="hover:text-red-6400">Home</a>
+                <a href="#" class="hover:text-red-400">Guide</a>
+                <a href="#" class=" hover:text-red-400">Contact Us</a>
+                <button href="https://aphfxtrading.com/app/register" class="hover:text-red-400">Sign Up</button>
+                
+            </div>
+            <!-- Button -->
+            <a href="https://aphfxtrading.com/app/login" class="hidden md:text-xs md:block p-2 px-3 pt-2 text-white bg-red-400 
+            rounded-full baseline hover:bg-brightRedLight">Login</a>
+            <span class="b-liner"></span>
+            
+            <!-- Hamburger icon -->
+            <button id="menu-btn" class=" open block hamburger 
+            md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col 
+            items-center self-end hidden py-8  space-y-6 font-bold 
+            bg-white-800 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+            <a href="#">Home</a>
+            <a href="guide.html" class="hover:text-red-400">Guide</a>
+            <a href="contact.html" class=" hover:text-red-400">Contact Us</a>
+            <button href="https://aphfxtrading.com/app/register" class="hover:text-red-400">Sign Up</button>
+            </div>
+            </div>
+        </div>
+    </nav>
