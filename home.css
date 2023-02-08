@@ -22,16 +22,46 @@ input{
 
 
 /* Nav positioning */
+header {
+    position: relative;
+}
 .navbar{
     position: fixed;
+    z-index: 99;
 }
-.about-image{
-    width: 100%;
-    height: 100vh;
+/* Rotating Circle */
 
+.circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
-.about-image img{
+
+.text{
     width: 100%;
-    height: 120%;
-    
+    height: 100%;
+    position: absolute;
+    animation: anim 10s linear infinite;
 }
+
+@keyframes anim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.text span{
+    position: absolute;
+    left: 50%;
+    font-size: 1em;
+    transform-origin: 0 100px;
+}
+
