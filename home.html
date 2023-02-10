@@ -21,6 +21,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="parallax.min.js"></script>
     
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 
 
@@ -39,20 +42,22 @@
         <nav class="flex bg-white h-20 xl:h-24 justify-between items-center mx-auto xl:px-20">
             <!-- Logo -->
             <div>
-                <img class="xl:w-70 w-60 -ml-4 " src="images/ES.png" alt="real estate broker in port harcourt">
+                <img class="xl:w-70 w-60 -ml-4 " src="images/es.png" alt="real estate broker in port harcourt">
             </div>
 
             <!-- Nav Links -->
             <div class="flex item-center w-full px-5 fixed nav-links duration-500 md:static md:min-h-fit md:w-auto left-0 top-[-100%]">
                 <ul class="flex flex-col gap-8 md:flex-row md:item-center md:gap-4 xl:-ml-10  mt-4 space-x-4">
                     <li>
-                        <a class="text-black font-bold xl:text-md hover:text-yellow-400" href="home.html">Home</a>
+                        <a class="text-black font-bold xl:text-md group" href="home.html">Home
+                            <span class="block max-w-0 group-hover:max-w-[100%] transition-all duration-500 h-0.5 bg-black"></span>
+                        </a>
                     </li>
                     <li>
-                        <a class="text-black font-bold xl:text-md hover:text-yellow-400" href="buy.html">About Us</a>
+                        <a class="text-black font-bold xl:text-md group" href="buy.html">About Us<span class="block max-w-0 group-hover:max-w-[100%] transition-all duration-500 h-0.5 bg-black"></span></a>
                     </li>
                     <li>
-                        <a class="text-black font-bold xl:text-md  hover:text-yellow-400" href="home.html">Buy Properties In Port Harcourt</a>
+                        <a class="text-black font-bold xl:text-md group" href="home.html">Buy Properties In Port Harcourt<span class="block max-w-0 group-hover:max-w-[100%] transition-all duration-500 h-0.5 bg-black"></span></a>
                     </li>
                     <!-- Socials And Search -->
                     <div class="socials flex flex-row space-x-4 xl:pl-44">
@@ -69,63 +74,183 @@
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="xl:hidden mr-10 md:hidden text-3xl"></ion-icon>
         </nav>
     </header>
+    <a href="#" class="group text-sky-600 transition duration-300">
+        Link
+        <span class="block max-w-0 group-hover:max-w-[35px] transition-all duration-500 h-0.5 bg-sky-600"></span>
+    </a>
+
 
 
     <!-- Hero Section -->
     
     <section class="banner-section h-[100vh] w-full relative">
                
-            <div id="about" class="about-text absolute top-0 bottom-0 left-0 right-0 flex flex-col p-10 text-center justify-center items-center z-50 ">
-                <h1 class="ES text-black font-serif text-white text-[240px]">ES</h1>
+            <div id="about" class="about-text absolute top-60 bottom-0 left-0 right-0 flex flex-col p-10 text-center justify-center items-center z-50 xl:top[70]">
+                <h1 class="ES text-black font-serif text-white text-[210px] xl:text-[240px]">ES</h1>
                 <h1 class="xl:text-[50px] tracking-widest top-[40%] left-[0%] mb-10 md:text-2xl text-white backdrop-blur-md lg:text-2xl sm:text-4xl text-[30px] font-serif">EBUKA SLYVA</h1>
-                <h2 class="text-2xl xl:text-2xl  xl:top[20%] top-[100%] left-[0%] font-bold text-white text-justify  bg-slate-400 py-10 px-10 opacity-90 rounded-t-md">Mr Slyva has enlightned and assited more than 100 <br>clients secure real estate investments,<br> He is sited as one of top realtors in Port Harcourt.</h2>
+                <h2 class="text-xl xl:text-2xl  xl:top[20%] top-[100%] left-[0%] font-bold text-white text-justify  bg-slate-400 py-10 px-10 opacity-90 rounded-t-md">Mr Slyva has enlightned and assited more than 100 <br>clients secure real estate investments,<br> He is sited as one of top realtors in Port Harcourt.</h2>
             </div>
-            <img class="w-[100%] h-[100%] absolute top-0 bottom-0 left-0 right-0" src="images/mrslyva.jpg">
+            <img class="ebuka w-[100%] h-[100%] absolute top-0 bottom-0 left-0 right-0 mix-blend-overlay" src="images/ebu.jpg">
         
     </section>
     
     <!-- Quotes -->
 
-    <div class="quote flex flex-col gap-10 text-center align-center justify-center p-20 bg-[url('/images/mm.jpg')] bg-no-repeat bg-cover bg-top text-white h-[500px]">
-        <div class="backdrop-blur-md">
-            <h1 class="text-2xl font-extrabold">"If you dont control your enviroment, somebody else will."</h1>
+    <div id="quote" class="flex flex-col gap-10 text-center align-center text-center p-10 bg-none text-black h-[600px] xl:h-[400px]">
+        <div class="backdrop-blur-md quote-one">
+            <h1 class="text-2xl font-extrabold xl:mt-10">"If you dont control your enviroment, somebody else will."</h1>
              <cite><b>-Grant Cardone</b></cite>
         </div>
-        <div class="backdrop-blur-md">
+        <div class="backdrop-blur-md quote-two leading-7 text-xl text-justify xl:text-center xl:mt-10">
             <h1>After studying Theatre and Film Studies in the University of Port Harcourt where he graduated <br>as the best of his class in 2019. He has since then undergone several courses and seminars on<br> real estate investments and creating bridges and connections internationally. </h1>
         </div>
 
     </div>
     
-
     
     <!-- Rotating Cicle with Text-- -->
-    <div class="info flex flex-col p-10 items-center justify-center xl:flex-row justify-between">
-       <div class="circle items-center">
+    
+    <div class="info flex flex-col p-10 xl:p-auto py-20 items-center  xl:flex-row justify-between">
+       <div class="circle items-center xl:mx-auto">
             <div class="text">
-                <p>WE MAKE CLIENTS - NOT JUST SALES - EBUKA S.</p>
+                <p>WE MAKE CLIENTS - NOT JUST SALES ●E.SLYVA●</p>
             </div>
         </div>
 
-        <div class="info-box text-center py-20 xl:text-justify">
-            <div>
-                <h1>EXPLORE PREMIUM EXCLUSIVE PROPERTIES</h1>
+        <div class="info-box text-center  xl:text-center xl:mt-0 leading-10 pt-10 xl:mx-auto">
+            <div class="">
+                <h1 class="text-2xl promo-text font-bold xl:text-[45px] xl:py-10 md:py-10 lg:py-10 xl:leading-10 text-left">EXPLORE PREMIUM <br>EXCLUSIVE PROPERTIES</h1>
             </div>
-            <div class="text-justify">
-                <h1>Why Port Harcourt?</h1>
-                <p>Port Harcourt is undoubtably one of the top cities in nigeria</p>
-                <p>Outstanding Properties</p>
-                <p>HIght yield Return as investing in properties is one of the riskk free method to build wealth and make profitable income.</p>
+            <div class="text-left text-lg leading-10">
+                <h1 class="text-left text-xl underline xl:text-left">Why Port Harcourt?</h1>
+                <p><ion-icon name="checkmark-circle-outline"></ion-icon> Port Harcourt is undoubtably one of the top cities in nigeria</p>
+                <p><ion-icon name="checkmark-circle-outline"></ion-icon> Outstanding Properties</p>
+                <p><ion-icon name="checkmark-circle-outline"></ion-icon> High yield Return as investing in properties is one of the risk free <br> method to build wealth and make profitable income</p>
             </div>
-            
-
         </div>
     </div>
+
+    <!-- WHY CHOOSE US -->
+
+    <div class="why-chose-us text-center m-10 xl:p-30 mx-auto  container">
+        <h1 class="text-2xl font-bold leading-10">WHY CHOOSE US</h1>
+        <div class="details block justify-between  py-10 text-left leading-10 xl:flex   xl:leading-8 lg:space-x-20 lg:text-center lg:leading-8 lg:flex md:flex m-10 xl:m-20">
+            <div class="consultation xl-m-10 m-0 p-10 bg-sky-100 text-left  mb-10 xl-mb-0 md:mb-0 lg:mb-0 text-lg">
+                <ion-icon class="bg-sky-400 p-2 rounded-md" name="bulb-outline"></ion-icon>
+                <h1 class="text-xl font-bold">Free Consultation</h1>
+                <p>There's a free Consultation and Suggestions to help you make better decision</p>
+            </div>
+            <div class="variety xl-m-10  p-10 bg-sky-100 text-left mb-10 xl-mb-0 md:mb-0 lg:mb-0 text-lg">
+                <ion-icon class="icons bg-sky-400 p-2 rounded-md" name="business-outline"></ion-icon>
+                <h1 class="text-xl font-bold">Variety Of Properties</h1>
+                <p>Theres a vast amount of lands and properties to choose to suit you needs</p>
+            </div>
+            <div class=" dedicated xl-m-0  p-10 bg-sky-100 text-left mb-10 xl-mb-0 md:mb-0 lg:mb-0 text-lg">
+                <ion-icon class="icons bg-sky-400 p-2 rounded-md" name="briefcase-outline"></ion-icon>
+                <h1 class="text-xl font-bold">Knowledgeable</h1>
+                <p>I know the market, i know what youre looking for, lets help you get it</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Display Property -->
+    
+    <div class="flex flex-col items-center xl:flex-row justify-between bg-sky-400">
+        
+ 
+         <div class="text-center  xl:text-center leading-10 xl:mx-auto p-10">
+             <div class="">
+                 <h1 class="text-3xl promo-text font-bold xl:text-[45px] xl:leading-10 text-left text-white">STUNNING, HOMELY <br>PROPERTIES BUILT <br>TO YOUR TASTE</h1>
+             </div>
+             <div class="text-left text-white font-medium text-xl leading-10">
+                 <p><ion-icon name="checkmark-circle-outline"></ion-icon> A good serene environment perfect for familes</p>
+                 <p><ion-icon name="checkmark-circle-outline"></ion-icon> Adequate Eletricity</p>
+                 <p><ion-icon name="checkmark-circle-outline"></ion-icon> Tarred/Good Road Network</p>
+                 <p><ion-icon name="checkmark-circle-outline"></ion-icon> Perimeter Fence</p>
+                 <div class="">
+                    <a href="buy.html" class="px-4 py-4 bg-white text-black hover:bg-black rounded-lg font-bold hover:text-white hover:text-bold transition-all duration-300">Explore Our Listing</a>
+                </div>
+             </div>
+             
+ 
+         </div>
+         <div class=" property-bg items-center xl:mx-auto w-[100%] h-[100%] xl:w-[25vw]">
+            <img class="w-full xl:w-[100%] h-[50vh]" src="images/building.png" alt="real estate property in port harcourt">
+        </div>
+     </div>
+
+
+    <!-- Testimonial  -->
+     <h1 class="text-center text-2xl font-bold pt-20 xl:text-4xl">HERE WHAT SOME OF OUR CLIENTS HAVE TO SAY</h1>
+     <div class="testimonial flex flex-col xl:flex-row xl:m-20 text-left">
+        
+        <div class="consultation test-one bg-slate-100 rounded-md p-10 hover:bg-sky-400 hover:text-white transition-all duration-300 m-10">
+            <h1 class="text-xl">Thanks to Ebuka Sylva's timely assistance. I discovered the secret to building wealth with real estate investment and got the most peculiar opportunity that I'm riding today. Now, I can't get enough of it.</h1>
+            <div class="test-about py-2 flex">
+                <img class="w-[50px] rounded-full h-[50px]" src="images/test1.jpg" alt="">
+                <cite> - A.Kingsley</cite>
+                
+            </div>
+        </div>
+        <div class="variety test-one bg-slate-100 rounded-md p-10 hover:bg-sky-400 hover:text-white transition-all duration-300 m-10">
+            <h1 class="text-xl">No one understand this more than Ebuka Sylva because he studies land and its potentials to make money with so much attention and focus that it makes you understand why he is doing so well in the business. Ebuka Sylva knows what he is doing.</h1>
+            <div class="test-about py-2 flex">
+                <img class="w-[50px] rounded-full h-[50px]" src="images/test3.jpg" alt="">
+                <cite> - A. Moroh</cite>
+                
+            </div>
+        </div>
+        <div class="dedicated test-one bg-slate-100 rounded-md p-10 hover:bg-sky-400 hover:text-white transition-all duration-300 m-10">
+            <h1 class="text-xl">Ebuka Sylva is good in this business, that is why I go to him anytime I want to invest; he is so meticulous and analytical that his guesses are almost bound to happen like he said, He is very dedicated to his craft</h1>
+            <div class="test-about py-2 flex">
+                <img class="w-[50px] rounded-full h-[50px]" src="images/test4.jpg" alt="">
+                <cite> - C. Obiamaizu</cite>
+                
+            </div>
+        </div>
+       
+     </div>
+
+
+     <!-- Footer -->
+     
+     <div class="footer flex flex-col p-20 xl:px-3 py-20 items-center xl:flex-row justify-between bg-black text-white ">
+        <div class=" items-center xl:mx-auto">
+            <div class="logo align">
+                <img class="xl:w-32 w-24 " src="images/es.jpg" alt="real estate broker in port harcourt">
+            </div>
+         </div>
+ 
+         <div class=" text-center  xl:mt-0 leading-10 py-10 xl:mx-auto flex- xl:flex xl:flex-col xl:text-left">
+            <h1 class="text-bold text-2xl">Links</h1>
+            <a href="Home">Home</a>
+            <a href="buy.html">Buy Properties</a>
+            <a href="about.html">About</a>
+            
+         </div>
+         <div class=" text-center xl:mt-0 leading-10 py-10 xl:mx-auto flex- xl:flex xl:flex-col xl:text-left">
+            <h1 class="text-bold text-2xl">Contact US</h1>
+            <h1>Get in touch with us</h1>
+            <h1>mail@ebukasylva.com</h1>
+            <h1>08182278654</h1>
+            
+         </div>
+     </div>
+
+
+     <div class="copyright">
+        <h1></h1>
+        <a href=""><img src="" alt=""></a>
+     </div>
+
+
 
     <!-- JS -->
     <script src="home.js"></script>
     <!-- Ion Icon -->
     <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
+    
     
 </body>
 
