@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
+*{
+    overflow-y: none;
+}
 body{
     font-family: 'Montserrat', sans-serif;
     background: transparent;
@@ -69,14 +71,10 @@ header {
 
 /* Ion Icons */
 .icons{
-    font-size: 30px;
+    font-size: 40px;
     color: white;
 }
 
-/* .ebuka {
-  
-    -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-    mask-image: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+.info{
+    background-color: rgba(245, 245, 245, 0.445);
 }
- */
-/* Display property */

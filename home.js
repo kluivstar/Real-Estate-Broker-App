@@ -29,12 +29,18 @@ ScrollReveal({
     duration: 2500,
     delay: 400
 });
+/* Scroll Reveal WHy Choose You */
+ScrollReveal().reveal('.quote-one', { delay: 200, origin: 'bottom'});
+ScrollReveal().reveal('.quote-two', { delay: 300, origin: 'bottom'});
+ScrollReveal().reveal('.info-box', { delay: 300, origin: 'right'});
 
-ScrollReveal().reveal('.quote-one', { delay: 500, origin: 'bottom'});
-ScrollReveal().reveal('.quote-two', { delay: 600, origin: 'bottom'});
-ScrollReveal().reveal('.info-box', { delay: 900, origin: 'right'});
+/* Testimonial Scroll in */
+ScrollReveal().reveal('.consultation', { delay: 200, origin: 'bottom'});
+ScrollReveal().reveal('.variety', { delay: 300, origin: 'bottom'});
+ScrollReveal().reveal('.dedicated', { delay: 400, origin: 'bottom'});
 
-/* Why Choose Us Scroll in */
-ScrollReveal().reveal('.consultation', { delay: 800, origin: 'bottom'});
-ScrollReveal().reveal('.variety', { delay: 700, origin: 'bottom'});
-ScrollReveal().reveal('.dedicated', { delay: 600, origin: 'bottom'});
+/* Author Details , About Page */
+ScrollReveal().reveal('.authors-box', { delay: 900, origin: 'bottom'});
+ScrollReveal().reveal('.authors-box-two', { delay: 800, origin: 'bottom'});
+
+
