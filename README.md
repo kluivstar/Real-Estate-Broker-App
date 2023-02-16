@@ -9,3 +9,6 @@
 *Javascript
 *Parallax
 *Scroll JS
+
+# Contributors
+* <a href="https://github.com/ScarredCodes"> * Scarred Code</a>
